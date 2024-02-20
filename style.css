@@ -1,5 +1,5 @@
 @import url('https://fonts.fonts.googleapis.com/css2?family=inter:wght@200;300;400;500;&display=swap');
-
+/*font inter importada do google fonts*/
 * {
     padding: 0;
     margin: 0;
@@ -44,27 +44,85 @@ header {
     list-style: none;
 }
 
- .nav-item{
-    margin: 0 15px;
+.nav-item {
+    margin: 20px 30px;
 
 
 }
-.nav-link
-{
+
+.nav-link {
     text-decoration: none;
     font-size: 1.15rem;
-    color:#fff ;
+    color: #fff;
     font-weight: 400;
 }
-.login-button button{
-    border:none;
+
+.login-button button {
+    border: none;
     background-color: aqua;
-    padding:  10px 15px;
-    border-radius: 5px ;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
+
 .login-button button a {
     text-decoration: none;
     color: #fff6f6;
     font-weight: 500;
-    font-size:1.1rem;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width:730px) {
+    .nav-bar{ 
+    
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button :no-button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+
+    }
 }
